@@ -1,0 +1,29 @@
+body{
+    /* background-image: url('/public/SVG/blob-scene-haikei.svg');
+    width: fit-content;
+    height: fit-content;
+    background-size: cover; */
+
+    padding: 16px;
+}
+
+.custom-shape-divider-top-1680958364 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1680958364 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 215px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1680958364 .shape-fill {
+    fill: #D1EAD1;
+}
