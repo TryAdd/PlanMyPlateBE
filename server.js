@@ -41,9 +41,13 @@ app.listen(port, () => {
 
 // import routers
 const indexRoute = require('./routes/index')
+const authRoute = require('./routes/auth');
+
 const recipeRoute = require('./routes/recipes')
 
 
 // Mounts Routes
 app.use('/',indexRoute)
+app.use('/', authRoute);
+
 app.use('/',recipeRoute);
