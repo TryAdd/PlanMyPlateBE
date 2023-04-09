@@ -1,0 +1,38 @@
+<h1>Recipe</h1>
+
+<table>
+<tr>
+<th> name</th>
+<th>ingredient</th>
+<th>step</th>
+<th>Edit</th>
+<th>Delete</th>
+
+</tr>
+
+<% recipes.forEach(function(recipe){%>
+    <tr>
+        <td>
+            <a href="/recipe/detail?id=<%= recipe._id %>">
+                <%= recipe.name %> </a> </td>
+        <td><%= recipe.ingredient %></td>
+        <td><%= recipe.step %></td>
+        
+       
+        <td><a href="/recipe/edit?id=<%=recipe._id%>">Edit</a></td>
+
+
+        <td>
+        <form method="POST" action="/recipe/delete?id=<%=recipe._id%>&_method=Delete">
+            <button type ="submit">Delete</button>
+        </form>
+        </td>
+
+
+
+    </tr>
+
+<%})%>
+
+
+</table>
