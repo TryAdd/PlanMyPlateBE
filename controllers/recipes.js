@@ -1,5 +1,7 @@
 const Recipe = require("../models/Recipe");
 
+// Require Moment
+const moment = require('moment');
 
 
 
@@ -42,6 +44,20 @@ exports.recipe_index_get = (req,res)=>{
         console.log(err);
     })
 }
+
+
+// HTTP GET - Recipe by ID
+exports.recipe_show_get = (req, res) => {
+    console.log(req.query.id);
+    Recipe.findById(req.query.id)
+    .then(recipe => {
+        res.json({recipe, moment})
+    })
+    .catch(err => {
+        console.log(err);
+    })
+}
+
 
 // HTTP GET - Load Recipe Edit Form
 exports.recipe_edit_get = (req, res) => {
