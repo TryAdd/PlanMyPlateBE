@@ -48,7 +48,7 @@ exports.recipe_index_get = (req,res)=>{
 
 // HTTP GET - Recipe by ID
 exports.recipe_show_get = (req, res) => {
-    console.log(req.query.id);
+    console.log("id", req.query.id);
     Recipe.findById(req.query.id)
     .then(recipe => {
         res.json({recipe, moment})
