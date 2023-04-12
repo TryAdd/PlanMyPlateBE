@@ -12,6 +12,15 @@ const recipeSchema = mongoose.Schema({
     name: String,
     ingredients: [String],
     step: String,
+    image: Object,
+    publicId: {
+        type: String,
+        required: false
+    },
+    imageUrl: {
+        type: String,
+        required: false
+    }
 },
 { timestamps: true}) 
 

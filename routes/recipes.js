@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 router.use(express.json());
+const multer = require ('multer')
+const upload = multer({ dest: 'uploads/' })
 
 
 
