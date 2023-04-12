@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 
+
 // Require and initialze dotenv
 require('dotenv').config();
 
@@ -12,6 +13,8 @@ mongoose.set('strictQuery', false);
 
 // Initailze Express
 const app = express();
+
+
 
 // Look for all the static files in public folder (css, JS, Images, Audio, Videos).
 app.use(express.static("public"));
@@ -42,12 +45,13 @@ app.listen(port, () => {
 // import routers
 const indexRoute = require('./routes/index')
 const authRoute = require('./routes/auth');
-
 const recipeRoute = require('./routes/recipes')
+const imageRoute = require('./routes/image');
+
 
 
 // Mounts Routes
 app.use('/',indexRoute)
 app.use('/', authRoute);
-
 app.use('/',recipeRoute);
+app.use('/', imageRoute);

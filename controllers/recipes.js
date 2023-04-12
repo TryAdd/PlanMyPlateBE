@@ -25,7 +25,8 @@ exports.recipe_create_post = (req,res)=>{
     //Save Recipe in database 
     recipe.save()
     .then((recipes)=>{
-        res.json({recipes});
+        console.log(recipes);
+        res.json(recipes);
     })
     .catch((err) => {
         console.log(err);
@@ -46,9 +47,9 @@ exports.recipe_index_get = (req,res)=>{
 }
 
 
-// HTTP GET - Recipe by ID  
+// HTTP GET - Recipe by ID
 exports.recipe_show_get = (req, res) => {
-    console.log("id", req.query.id);
+    console.log("id",req.query.id);
     Recipe.findById(req.query.id)
     .then(recipe => {
         res.json({recipe, moment})
