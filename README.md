@@ -1,8 +1,11 @@
-# Our ERD:
-https://files.slack.com/files-pri/T03JBCX8WE7-F053015QDGB/capture.jpg
+# Front End:
+- https://github.com/TryAdd/PlanMyPlateFE
+
+# ERD:
+- https://files.slack.com/files-pri/T03JBCX8WE7-F053015QDGB/capture.jpg
 
 # Figma prototype:
-https://www.figma.com/proto/d65OitkOzGGh52q7H48rZL/PlanMyPlate?page-id=0%3A1&node-id=9-151&viewport=1062%2C796%2C0.38&scaling=contain&starting-point-node-id=9%3A151
+- https://www.figma.com/proto/d65OitkOzGGh52q7H48rZL/PlanMyPlate?page-id=0%3A1&node-id=9-151&viewport=1062%2C796%2C0.38&scaling=contain&starting-point-node-id=9%3A151
 
 # Plan My Plate ReadMe
 	- An embedded screenshot of the app
